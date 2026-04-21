@@ -14,34 +14,25 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.assignment220.ui.theme.Assignment220Theme
 
 class MainActivity : ComponentActivity() {
+
+    private val questions = arrayOf(
+        "Tinfoil bridges AAA batteries to fit AA slots.",
+        "Garlic makes picking up yolks easier.",
+        "You can use a potato to charge your phone.",
+        "Tape lifts stickers cleanly and quickly.",
+        "Saltwater makes gummy sweets massive"
+    )
+    private val answers = arrayOf(true, true, false, true, false)
+
+    private var currentQuestions = 0
+
+    private var score = 0
+
+    private val feedbackList = mutableListOf<String>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            Assignment220Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Assignment220Theme {
-        Greeting("Android")
+        setContentView(R.layout.act_questions)
     }
 }
