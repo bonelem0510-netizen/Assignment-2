@@ -3,6 +3,7 @@ package com.example.assignment220
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -102,6 +103,26 @@ class MainActivity : ComponentActivity() {
 
     private fun showScoreScreen(){
         setContentView(R.layout.act_score)
+
+        val scoreText = findViewById<TextView>(R.id.txtScore)
+        val finalFeedback = findViewById<TextView>(R.id.txtFinal_Answer)
+        val reviewButton = findViewById<Button>(R.id.btnReview_Button)
+        val exitButton = findViewById<Button>(R.id.btnExit_Button)
+
+        scoreText.text = "You score $score out of ${questions.size}"
+        finalFeedback.text =
+            if (score >= 2) "Awesome! You are a Hacker!" else "You are a Dud"
+
+        reviewButton.setOnClickListener {
+            val facts = questions.mapIndexed { index, q ->
+                "${index + 1}, $q\nAnswer: ${answers[index]}"
+            }.joinToString("\n\n")
+            Toast.makeText(this, facts, Toast.LENGTH_LONG).show()
+        }
+
+        exitButton.setOnClickListener {
+            finish()
+        }
     }
 }
 
