@@ -21,6 +21,7 @@ Hack 3: (Mrwhosetheboss,2022)
 Hack 4: (Faze Rug, 2021)
 Hack 5: (Vin,2024)
 The Ui: (Go Media,2026)
+Image: (r/ProgrammerHumor,2019)
 
 Referencing List:
 The code: Negema, F.2026. Interface and arrays. [Online Video] Available at: <https://mystudies.iie.edu.za/d2l/le/lessons/73518/topics/5750352> [Accessed 21 April 2026]
@@ -30,3 +31,6 @@ Hack 3: Mrwhosetheboss. 2022. I Tested the Most Ridiculous TikTok Life Hacks.. [
 Hack 4: Vin. 2024. I Tested The Most VIRAL TikTok Life Hacks. [Online Video] Available at:<https://www.youtube.com/watch?v=75xDPsvzKic> [Accessed 21 April 2026]
 Hack 5: Faze Rug. 2021. Trying TikTok Life Hacks to See If They Work. [Online Video] Available at:<https://www.youtube.com/watch?v=vRCPg51ohsI> [Accessed 21 April 2026]
 The Ui: Go Media. 2026. User Interface Design. [Online Website] Available at <https://gomedia.com/services/user-interface-design/> [Accessed 21 April 2026]
+Image: r/ProgrammerHumor. 2019. Wrote some Python code on the teacher’s typewriter when I got bored. [Online Website] Available at <https://www.reddit.com/r/ProgrammerHumor/comments/apv9vi/wrote_some_python_code_on_the_teachers_typewriter/> [Accessed 24 April 2026]
+
+
