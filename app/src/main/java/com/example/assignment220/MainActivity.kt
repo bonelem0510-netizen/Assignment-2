@@ -35,8 +35,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.act_questions)
+       showWelcomeScreen()
     }
 
 
@@ -84,7 +83,7 @@ class MainActivity : ComponentActivity() {
             if (currentQuestions < questions.size) {
                 showQuestionScreen()
             } else {
-                showQuestionScreen()
+                showScoreScreen()
             }
         }
     }
