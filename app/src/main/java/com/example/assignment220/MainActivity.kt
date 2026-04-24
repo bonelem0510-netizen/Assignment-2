@@ -19,8 +19,8 @@ import com.example.assignment220.ui.theme.Assignment220Theme
 class MainActivity : ComponentActivity() {
 
     private val questions = arrayOf(
-        "Tinfoil bridges AAA batteries to fit AA slots.",
-        "Garlic makes picking up yolks easier.",
+        "Tinfoil bridges AAA batteries to fit AA battery slots.",
+        "Garlic makes picking up egg yolk easier.",
         "You can use a potato to charge your phone.",
         "Tape lifts stickers cleanly and quickly.",
         "Saltwater makes gummy sweets massive"
@@ -108,9 +108,9 @@ class MainActivity : ComponentActivity() {
         val reviewButton = findViewById<Button>(R.id.btnReview_Button)
         val exitButton = findViewById<Button>(R.id.btnExit_Button)
 
-        scoreText.text = "You score $score out of ${questions.size}"
+        scoreText.text = "You scored $score out of ${questions.size}"
         finalFeedback.text =
-            if (score >= 2) "Awesome! You are a Hacker!" else "You are a Dud"
+            if (score >= 2) "Awesome! You are a Hacker!" else "You are a Dud!"
 
         reviewButton.setOnClickListener {
             val facts = questions.mapIndexed { index, q ->
